@@ -1127,10 +1127,6 @@ body {
   grid-row: 2/3;
 }
 
-.thumbs-gallery__slider {
-  touch-action: none;
-}
-
 .thumbs-gallery__slide {
   width: 120px;
   height: 64px;
