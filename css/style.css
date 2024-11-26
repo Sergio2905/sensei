@@ -686,6 +686,15 @@ body {
 
 /* Slide styles end */
 
+.swiper-grid > .swiper-wrapper {
+  flex-wrap: wrap;
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .main {
   background: url("../img/main/bg.webp") center/cover no-repeat;
   margin-bottom: 35px;
@@ -1125,6 +1134,10 @@ body {
   margin-top: 24px;
   grid-column: 3/4;
   grid-row: 2/3;
+}
+
+.thumbs-gallery {
+  min-width: 0;
 }
 
 .thumbs-gallery__slide {
@@ -2373,16 +2386,10 @@ body {
     display: none;
   }
 
-  .thumbs-gallery__wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-  }
-
   .thumbs-gallery__slide {
     width: unset;
     height: unset;
-    min-width: unset;
+    max-width: 33%;
   }
 
   .thumbs-gallery__slide img {
