@@ -2389,7 +2389,7 @@ body {
   .thumbs-gallery__slide {
     width: unset;
     height: unset;
-    max-width: 33%;
+    min-width: unset;
   }
 
   .thumbs-gallery__slide img {
